@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "lint-staged": {
-    "*.{css,md,json}": [],
+    "*.{css,md,json}": [
+      "prettier --write"
+    ],
     "*.ts?(x)": [
-      "eslint"
+      "eslint",
+      "prettier --write"
     ],
     "package.json": [
       "sort-package-json"
