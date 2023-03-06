@@ -2,20 +2,21 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
+    jest: true
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:jsx-a11y/recommended'
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended'
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     Feature: 'readonly',
     Scenario: 'readonly',
-    context: 'readonly',
+    context: 'readonly'
   },
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -23,14 +24,14 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   plugins: ['react', '@typescript-eslint', 'jsx-a11y'],
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
   rules: {
     'indent': ['error', 2],
@@ -60,5 +61,7 @@ module.exports = {
     'semi': ['error', 'always'],
 
     'arrow-body-style': 'off',
-  },
+
+    'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'crlf' }]
+  }
 };
