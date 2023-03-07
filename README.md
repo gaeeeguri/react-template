@@ -3,8 +3,8 @@
 - Vite
 - React
 - TypeScript
-- eslint
-- prettier
-- commitlint
-- husky
-- tailwindcss
+- Jest
+- ESlint
+- Prettier
+- Husky
+- Tailwindcss
