@@ -12,11 +12,6 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-    Feature: 'readonly',
-    Scenario: 'readonly',
-    context: 'readonly'
   },
   overrides: [],
   parser: '@typescript-eslint/parser',
