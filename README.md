@@ -7,4 +7,3 @@
 - ESlint
 - Prettier
 - Husky
-- Tailwindcss
